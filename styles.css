@@ -37,11 +37,16 @@ textarea{
 .texto-ingresado textarea{
     background-color: #add8e6;
     resize: none;
+    border: none;
     font-size: 30px;
     color:#49416d;
 }
 .texto-ingresado textarea:focus{
     outline: none;
+}
+.texto-ingresado textarea::placeholder{
+    color:#49416d;
+    text-decoration: underline dashed;
 }
 .muñeco{
     position: absolute;
@@ -152,6 +157,7 @@ footer img:hover{
     textarea{
         width: 350px;
         height: 500px;
+        border: none;
     }
     .muñeco{
         position: absolute;
@@ -255,6 +261,7 @@ footer img:hover{
     textarea{
         width: 720px;
         height: 500px;
+        border: none;
     }
     .muñeco{
         position: absolute;
