@@ -109,7 +109,9 @@ textarea{
     transform: scale(1.1);
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
-
+.muñeco textarea{
+    display:none;
+}
 .botones-contenedor{
     padding: 10px;
     margin-left: 120px;
