@@ -52,6 +52,8 @@ textarea{
     position: absolute;
     top: 50px;
     right: 50px;
+    left: 900px;
+    bottom: 50px;
     background-color: white;
     padding: 40px;
     border:none;

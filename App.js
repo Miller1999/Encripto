@@ -1,30 +1,31 @@
 
-var boton_encriptado = document.getElementById("encriptar")
-var boton_desencriptar = document.getElementById("desencriptar")
-
+var boton_encriptado = document.getElementById("encriptar");
+var boton_desencriptar = document.getElementById("desencriptar");
+var muñeco = document.getElementById("muñeco");
+var titulo = document.getElementById("Titulo");
+var textoI = document.getElementById("textoIngresado")
 
 
 function encriptar()
 {
-    var texto_inicial = document.getElementById("texto").value;
-    var longitud_texto = texto_inicial.length;
-    for(var i = 0;i<longitud_texto;i++)
-    {
-        if(texto_inicial[i] == "a")
-        {
-            let texto_encriptado = texto_inicial.replaceAll("a","ai");
-            texto_inicial = texto_encriptado;
-            console.log(texto_inicial);
-        }
-    }
+    titulo.style.display = "none";
+    muñeco.style.display = "none";
+    // Con la letra a
+    let texto_inicial = document.getElementById("texto").value;
+    let texto_encriptado = texto_inicial.replaceAll("a","ai");
+    textoI.textContent=texto_encriptado;
+    document.getElementById("texto").value = "";
 }
 
 function desencriptar()
 {
+    titulo.style.display = "none";
+    muñeco.style.display = "none";
+    // Con la letra a
     let texto_inicial = document.getElementById("texto").value;
     let texto_encriptado = texto_inicial.replaceAll("ai","a");
-    texto_inicial = texto_encriptado;
-    console.log(texto_inicial);
+    textoI.textContent = texto_encriptado;
+    document.getElementById("texto").value = "";
 }
 
 boton_encriptado.onclick = encriptar;
