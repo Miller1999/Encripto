@@ -90,6 +90,26 @@ textarea{
     transform: scale(1.1);
     color: black;
 }
+.muñeco button{
+    position: absolute;
+    bottom: 50px;
+    left:90px;
+    font-size: 20px;
+    width: 300px;
+    height: 70px;
+    border: solid 1px gray;
+    border-radius: 20px;
+    transition: 0.5s all;
+
+}
+.muñeco button:hover{
+    background-color: #49416d;
+    color: whitesmoke;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
 .botones-contenedor{
     padding: 10px;
     margin-left: 120px;
