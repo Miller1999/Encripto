@@ -12,6 +12,7 @@ var content = document.getElementById('text');
 function encriptar()
 {
     //No mostrar imagen y titulo del cuadro a la derecha
+    textoI.style.color ="gray";
     titulo.style.display = "none";
     muñeco.style.display = "none";
     boton_copiar.style.visibility = "visible";
@@ -43,6 +44,7 @@ function encriptar()
 function desencriptar()
 {
     //No mostrar imagen y titulo del cuadro a la derecha
+    textoI.style.color ="gray";
     titulo.style.display = "none";
     muñeco.style.display = "none";
     boton_copiar.style.visibility = "visible";
@@ -75,7 +77,7 @@ function copiar()
 {
     //API navigator para clipboard
     navigator.clipboard.writeText(content.value);
-    alert("Copiado!")
+    textoI.style.color ="red";
 }
 
 
