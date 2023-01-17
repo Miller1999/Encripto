@@ -14,6 +14,7 @@ function encriptar()
     //No mostrar imagen y titulo del cuadro a la derecha
     titulo.style.display = "none";
     muñeco.style.display = "none";
+    boton_copiar.style.visibility = "visible";
     //Obtiene el valor de lo ingresado por el usuario
     let texto_inicial = document.getElementById("texto").value;
     //Letra e
@@ -40,6 +41,7 @@ function desencriptar()
     //No mostrar imagen y titulo del cuadro a la derecha
     titulo.style.display = "none";
     muñeco.style.display = "none";
+    boton_copiar.style.visibility = "visible";
     //Obtiene el valor de lo ingresado por el usuario
     let texto_inicial = document.getElementById("texto").value;
     //Letra e

@@ -91,6 +91,7 @@ textarea{
     color: black;
 }
 .muñeco button{
+    visibility: hidden;
     position: absolute;
     bottom: 50px;
     left:90px;
