@@ -33,6 +33,10 @@ function encriptar()
     document.getElementById("texto").value = "";
     // Content usado para la funcion copiar
     content.value = texto_encriptado;
+    if(content.value == "")
+    {
+        location.reload();
+    }
 }
 
 //Funcion de desencriptado
@@ -60,6 +64,10 @@ function desencriptar()
     content.value = texto_encriptado;
     //Vacia el textarea
     document.getElementById("texto").value = "";
+    if(content.value == "")
+    {
+        location.reload();
+    }
 }
 
 //Funcion copiar: Usada para el boton debajo del mensaje
@@ -69,6 +77,8 @@ function copiar()
     navigator.clipboard.writeText(content.value);
     alert("Copiado!")
 }
+
+
 
 // Acciones de los botones
 boton_copiar.onclick = copiar;

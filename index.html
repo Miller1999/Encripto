@@ -19,7 +19,7 @@
     <main>
         <section class="caja">
             <div class="texto-ingresado">
-                <textarea id="texto" name="Ingreso" placeholder="Ingrese el texto aqui"></textarea>
+                <textarea id="texto" name="Ingreso" placeholder="Ingrese el texto aqui" onkeypress="return ((event.charCode >= 97 && event.charCode <= 122) || event.charCode == 32)"></textarea>
             </div>
             <div class="muñeco">
                 <div id="muñeco">
