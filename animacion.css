@@ -1,0 +1,59 @@
+.logoan{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+    -webkit-animation: girar 2s linear infinite;
+    -o-animation: girar 2s linear infinite;
+    animation: girar 2s linear infinite;
+}
+
+.cuadrado1{
+    border-radius: 20px;
+    position: absolute;
+    top:400px;
+    left: 0px;
+    width: 730px;
+    height: 50px;
+    background: white;
+    animation-name: mover1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+}
+
+.cuadrado2{
+    border-radius: 20px;
+    position: absolute;
+    top:450px;
+    right: 0px;
+    width: 730px;
+    height: 50px;
+    background: white;
+    animation-name: mover2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+}
+
+@keyframes girar {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+@keyframes mover1 {
+    from{transform: translate(0px);}
+    to{transform: translate(730px);}
+}
+
+@keyframes mover2 {
+    from{transform: translate(0px);}
+    to{transform: translate(-730px);}
+}

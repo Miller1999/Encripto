@@ -80,9 +80,25 @@ function copiar()
     textoI.style.color ="red";
 }
 
-
-
 // Acciones de los botones
 boton_copiar.onclick = copiar;
 boton_encriptado.onclick = encriptar;
 boton_desencriptar.onclick = desencriptar;
+
+//ANIMACION
+//Captura de secciones
+var pagina = document.getElementById("pag")
+var animacion = document.getElementById("animacion")
+
+function mostrarPagina()
+{
+    pagina.style.visibility = "visible";
+}
+function ocultarAnimacion()
+{
+    animacion.style.visibility = "hidden";
+}
+//Para aparecer y desaparecer secciones
+setTimeout(ocultarAnimacion,5000);
+setTimeout(mostrarPagina,5000);
+
