@@ -96,7 +96,7 @@ function mostrarPagina()
 }
 function ocultarAnimacion()
 {
-    animacion.style.visibility = "hidden";
+    animacion.style.display = "none";
 }
 //Para aparecer y desaparecer secciones
 setTimeout(ocultarAnimacion,5000);

@@ -57,3 +57,43 @@
     from{transform: translate(0px);}
     to{transform: translate(-730px);}
 }
+@media screen and (max-width: 768px) and (min-width: 377px) {
+    .cuadrado1{
+        position: absolute;
+        top: 460px;
+    }
+    .cuadrado2{
+        position: absolute;
+        top: 510px;
+    }
+    @keyframes mover1 {
+        from{transform: translate(0px);}
+        to{transform: translate(385px);}
+    }
+    
+    @keyframes mover2 {
+        from{transform: translate(0px);}
+        to{transform: translate(-385px);}
+    }
+}
+@media screen and (max-width: 376px) {
+    .cuadrado1{
+        position: absolute;
+        top: 400px;
+        width: 390px;
+    }
+    .cuadrado2{
+        position: absolute;
+        top: 450px;
+        width: 390x;
+    }
+    @keyframes mover1 {
+        from{transform: translate(0px);}
+        to{transform: translate(188px);}
+    }
+    
+    @keyframes mover2 {
+        from{transform: translate(0px);}
+        to{transform: translate(-188px);}
+    }
+}
