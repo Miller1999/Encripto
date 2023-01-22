@@ -33,6 +33,8 @@
 ### Escritorio
 ![Escritorio](Imagenes/imagen_2023-01-22_101342125.png)
 ### Tablet
+![Tablet](Imagenes/imagen_2023-01-22_101447560.png)
 ### Celular
-
+![Celular](Imagenes/imagen_2023-01-22_101506758.png)
+***
 # Gracias por la atención y por leer hasta aca
