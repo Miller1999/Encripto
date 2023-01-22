@@ -14,10 +14,10 @@
 .cuadrado1{
     border-radius: 20px;
     position: absolute;
-    top:400px;
+    top:490px;
     left: 0px;
-    width: 730px;
-    height: 50px;
+    width: 960px;
+    height: 55px;
     background: white;
     animation-name: mover1;
     animation-duration: 2s;
@@ -30,10 +30,10 @@
 .cuadrado2{
     border-radius: 20px;
     position: absolute;
-    top:450px;
+    top:540px;
     right: 0px;
-    width: 730px;
-    height: 50px;
+    width: 960px;
+    height: 55px;
     background: white;
     animation-name: mover2;
     animation-duration: 2s;
@@ -50,50 +50,106 @@
 
 @keyframes mover1 {
     from{transform: translate(0px);}
-    to{transform: translate(730px);}
+    to{transform: translate(960px);}
 }
 
 @keyframes mover2 {
     from{transform: translate(0px);}
-    to{transform: translate(-730px);}
+    to{transform: translate(-960px);}
 }
-@media screen and (max-width: 768px) and (min-width: 377px) {
+@media screen and (max-width:1280px) and (max-height:720px){
     .cuadrado1{
-        position: absolute;
-        top: 460px;
+        top:310px;
+        left: 0px;
+        width: 640px;
+        height: 55px;
+
     }
+    
     .cuadrado2{
-        position: absolute;
-        top: 510px;
+        top:360px;
+        right: 0px;
+        width: 640px;
+        height: 55px;
+
     }
+    
+    @keyframes girar {
+        from{transform: rotate(0deg);}
+        to{transform: rotate(360deg);}
+    }
+    
     @keyframes mover1 {
         from{transform: translate(0px);}
-        to{transform: translate(385px);}
+        to{transform: translate(640px);}
     }
     
     @keyframes mover2 {
         from{transform: translate(0px);}
-        to{transform: translate(-385px);}
+        to{transform: translate(-640px);}
     }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width:1080px) and (max-height:1920px){
     .cuadrado1{
-        position: absolute;
-        top: 400px;
-        width: 390px;
+        top:910px;
+        left: 0px;
+        width: 540px;
+        height: 55px;
+
     }
+    
     .cuadrado2{
-        position: absolute;
-        top: 450px;
-        width: 390x;
+        top:960px;
+        right: 0px;
+        width: 540px;
+        height: 55px;
+
     }
+    
+    @keyframes girar {
+        from{transform: rotate(0deg);}
+        to{transform: rotate(360deg);}
+    }
+    
     @keyframes mover1 {
         from{transform: translate(0px);}
-        to{transform: translate(188px);}
+        to{transform: translate(540px);}
     }
     
     @keyframes mover2 {
         from{transform: translate(0px);}
-        to{transform: translate(-188px);}
+        to{transform: translate(-540px);}
+    }
+}
+@media screen and (max-width:720px) and (max-height:1280px){
+    .cuadrado1{
+        top:590px;
+        left: 0px;
+        width: 360px;
+        height: 55px;
+
+    }
+    
+    .cuadrado2{
+        top:640px;
+        right: 0px;
+        width: 360px;
+        height: 55px;
+
+    }
+    
+    @keyframes girar {
+        from{transform: rotate(0deg);}
+        to{transform: rotate(360deg);}
+    }
+    
+    @keyframes mover1 {
+        from{transform: translate(0px);}
+        to{transform: translate(360px);}
+    }
+    
+    @keyframes mover2 {
+        from{transform: translate(0px);}
+        to{transform: translate(-360px);}
     }
 }

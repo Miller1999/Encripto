@@ -36,7 +36,11 @@ function encriptar()
     content.value = texto_encriptado;
     if(content.value == "")
     {
-        location.reload();
+        alert("No hay texto para encriptar")
+        textoI.textContent = "Ingrese el texto que desea encriptar o desencriptar"
+        titulo.style.display = "block";
+        muñeco.style.display = "block";
+        boton_copiar.style.visibility = "hidden";
     }
 }
 
@@ -68,7 +72,11 @@ function desencriptar()
     document.getElementById("texto").value = "";
     if(content.value == "")
     {
-        location.reload();
+        alert("No hay texto para desencriptar")
+        textoI.textContent = "Ingrese el texto que desea encriptar o desencriptar"
+        titulo.style.display = "block";
+        muñeco.style.display = "block";
+        boton_copiar.style.visibility = "hidden";
     }
 }
 
