@@ -30,4 +30,9 @@
 
 ## [Enkripto](https://miller1999.github.io/Encripto/)
 
+### Escritorio
+![Escritorio](Imagenes/imagen_2023-01-22_101342125.png)
+### Tablet
+### Celular
+
 # Gracias por la atención y por leer hasta aca
