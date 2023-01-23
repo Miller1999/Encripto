@@ -1,20 +1,16 @@
+
 .logoan{
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
     z-index: 1;
-    -webkit-animation: girar 2s linear infinite;
-    -o-animation: girar 2s linear infinite;
     animation: girar 2s linear infinite;
 }
-
 .cuadrado1{
     border-radius: 20px;
     position: absolute;
-    top:490px;
+    top:50%;
     left: 0px;
     width: 960px;
     height: 55px;
@@ -30,7 +26,7 @@
 .cuadrado2{
     border-radius: 20px;
     position: absolute;
-    top:540px;
+    top:50%;
     right: 0px;
     width: 960px;
     height: 55px;
@@ -56,100 +52,4 @@
 @keyframes mover2 {
     from{transform: translate(0px);}
     to{transform: translate(-960px);}
-}
-@media screen and (max-width:1280px) and (max-height:720px){
-    .cuadrado1{
-        top:310px;
-        left: 0px;
-        width: 640px;
-        height: 55px;
-
-    }
-    
-    .cuadrado2{
-        top:360px;
-        right: 0px;
-        width: 640px;
-        height: 55px;
-
-    }
-    
-    @keyframes girar {
-        from{transform: rotate(0deg);}
-        to{transform: rotate(360deg);}
-    }
-    
-    @keyframes mover1 {
-        from{transform: translate(0px);}
-        to{transform: translate(640px);}
-    }
-    
-    @keyframes mover2 {
-        from{transform: translate(0px);}
-        to{transform: translate(-640px);}
-    }
-}
-@media screen and (max-width:1080px) and (max-height:1920px){
-    .cuadrado1{
-        top:910px;
-        left: 0px;
-        width: 540px;
-        height: 55px;
-
-    }
-    
-    .cuadrado2{
-        top:960px;
-        right: 0px;
-        width: 540px;
-        height: 55px;
-
-    }
-    
-    @keyframes girar {
-        from{transform: rotate(0deg);}
-        to{transform: rotate(360deg);}
-    }
-    
-    @keyframes mover1 {
-        from{transform: translate(0px);}
-        to{transform: translate(540px);}
-    }
-    
-    @keyframes mover2 {
-        from{transform: translate(0px);}
-        to{transform: translate(-540px);}
-    }
-}
-@media screen and (max-width:720px) and (max-height:1280px){
-    .cuadrado1{
-        top:590px;
-        left: 0px;
-        width: 360px;
-        height: 55px;
-
-    }
-    
-    .cuadrado2{
-        top:640px;
-        right: 0px;
-        width: 360px;
-        height: 55px;
-
-    }
-    
-    @keyframes girar {
-        from{transform: rotate(0deg);}
-        to{transform: rotate(360deg);}
-    }
-    
-    @keyframes mover1 {
-        from{transform: translate(0px);}
-        to{transform: translate(360px);}
-    }
-    
-    @keyframes mover2 {
-        from{transform: translate(0px);}
-        to{transform: translate(-360px);}
-    }
 }
